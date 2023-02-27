@@ -17,7 +17,7 @@
 
     <div class="uk-section uk-container">
         <div class="uk-grid-small uk-child-width-1-3@s uk-child-width-1-1" uk-grid="">
-            <form class="uk-form-stacked">
+            <form class="uk-form-stacked js-login">
 
                 <div class="uk-margin">
                     <label class="uk-form-label" for="form-stacked-text">Email</label>
