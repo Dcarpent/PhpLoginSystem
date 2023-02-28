@@ -6,6 +6,10 @@ if(!defined('__CONFIG__')) {
     exit('You do not a config file');
 }
 
+if (!isset($_SESSION)) {
+    session_start();
+}
+
 error_reporting(-1);
 ini_set('display_errors', 'On');
 

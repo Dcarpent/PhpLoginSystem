@@ -41,24 +41,15 @@
 
             $user_id = $con->lastInsertId();
             $_SESSION['user_id'] = (int) $user_id;
-            $return['redirect'] = $root . '/dashboard.php?message=welcome';
+            $return['redirect'] = 'http://localhost:8090/phploginsystem/dashboard.php';
             $return['is_logged_in'] = true;
         }
 
-        // ensure use can be added
-
-
-        // return proper information
-
-       
-
         echo json_encode($return, JSON_PRETTY_PRINT);
-
     }
     else {
 
         // kill and redirect
-
         exit('Invalid URL'); 
     }
 
