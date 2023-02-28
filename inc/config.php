@@ -22,5 +22,6 @@ $root = dirname(__DIR__);
 
 include_once($root . '/inc/classes/DB.php');
 include_once($root . '/inc/classes/Filter.php');
+include_once("functions.php");
 
 $con = DB::getConnection();

@@ -5,8 +5,11 @@
     // require the config
     require_once "inc/config.php";
 
-    echo $_SESSION['user_id'] . ' is your user id!';
-    exit();
+    echo URLROOT . "/login.php";
+
+    
+    forceLogin();
+  
 
 ?>
 
@@ -29,14 +32,8 @@
 <body>
 
     <div class="uk-section uk-container">
-        <?php echo 'Hello World! Today is:';
-            echo date('Y m d'); ?>
-
-
-        <p class="uk-margin-top">
-            <a href='login.php' class="uk-button uk-button-default">Login</a>
-            <a href='register.php' class="uk-button uk-button-default">Register</a>
-        </p>
+        <h3>DASHBOARD</3>
+        <p>You are signed in as user: <?php echo $_SESSION['user_id']; ?></p>
     </div>
 
     <?php require_once 'inc/footer.php'; ?>
