@@ -6,9 +6,10 @@
     require_once "inc/config.php";
 
     echo URLROOT . "/login.php";
-
     
     forceLogin();
+
+    $user_id = $_SESSION['user_id'];
   
 
 ?>
